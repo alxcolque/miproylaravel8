@@ -2,6 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return 'welcome moder';
-})->name('moder.home');
+Route::get('/', [App\Http\Controllers\Moder\HomeController::class, 'index'])->name('user.home');

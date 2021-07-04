@@ -25,7 +25,7 @@ class IsModer
                 return $next($request); // si es un moderador  continua ruta MODe
                 break;
             case ('3'):
-                return redirect('users'); //si es administrador redirige al moderador
+                return redirect('user'); //si es administrador redirige al moderador
                 break;
         }
     }

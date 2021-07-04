@@ -22,10 +22,10 @@ class IsAdmin
                 return $next($request); //si es administrador continua al HOME
                 break;
             case ('2'):
-                return redirect('moders'); // si es un usuario normal redirige a la ruta USER
+                return redirect('moder'); // si es un usuario normal redirige a la ruta USER
                 break;
             case ('3'):
-                return redirect('users'); //si es administrador redirige al moderador
+                return redirect('user'); //si es administrador redirige al moderador
                 break;
         }
     }
