@@ -19,6 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css">
+    @yield('css')
 </head>
 <body>
     <div id="app">
@@ -90,5 +91,6 @@ crossorigin="anonymous"></script>
 integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/f2035cc302.js"></script>
+@yield('js')
 </body>
 </html>
