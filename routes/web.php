@@ -22,5 +22,7 @@ Route::post('/auth/login', [AuthController::class, 'login']);
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/pdfmaker', [App\Http\Controllers\PdfController::class, 'index'])->name('pdfmaker');
 
+Route::get('/admin/pdfmaker/export-pdf', [App\Http\Controllers\PdfController::class, 'exportPdf'])->name('export-pdf');
 

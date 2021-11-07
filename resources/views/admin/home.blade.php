@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are ADMIN!') }}
+                    <a href="{{ route('pdfmaker') }}" class="btn btn-primary btn-sm">Generar pdf</a>
                 </div>
             </div>
         </div>
