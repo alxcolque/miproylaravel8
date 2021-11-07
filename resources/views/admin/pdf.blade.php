@@ -13,9 +13,9 @@
                         @endif
 
                         <a href="javascript:void(0)" class="nav-link" onclick="export2Pdf()">Download PDF</a>
-                        <div class="image"></div>
+                        <div class="image" style="display: none"></div>
                         <h1>Some Random Text Title Content</h1>
-                        <div class="content">
+                        <div class="content" style="display: none">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dicta dolorem, expedita
                                 ipsum maiores quas sapiente vero. Beatae dolore dolores ducimus eos, iusto laborum possimus

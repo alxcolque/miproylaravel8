@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+use App\Mail\SugerenciaMailable;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +27,10 @@ Auth::routes();
 Route::get('/admin/pdfmaker', [App\Http\Controllers\PdfController::class, 'index'])->name('pdfmaker');
 
 Route::get('/admin/pdfmaker/export-pdf', [App\Http\Controllers\PdfController::class, 'exportPdf'])->name('export-pdf');
+
+Route::get('sugerencias', function(){
+    /* $correo = new SugerenciaMailable;
+    Mail::to('a.colq3.c@gmail.com')->send($correo);
+    return "Mensaje enviado"; */
+});
 
